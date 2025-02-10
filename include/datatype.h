@@ -12,10 +12,4 @@ typedef struct {
 
 
 
-//class datatype {
-//
-//};
-
-
-
 #endif //DATATYPE_H

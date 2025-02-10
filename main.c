@@ -4,7 +4,7 @@
 
 int main() {
     int choice;
-    loadFromFile();  // Load existing data when program starts
+    loadFromFile();
 
     do {
         displayMenu();
@@ -18,10 +18,10 @@ int main() {
                 addStudent();
             break;
             case 0:
-                printf("\nCảm ơn bạn đã sử dụng chương trình!\n");
+                printf("\nCam on ban da su dung chuong trinh\n");
             break;
             default:
-                printf("\nLựa chọn không hợp lệ!\n");
+                printf("\nLua chon khong hop le\n");
         }
     } while (choice != 0);
 
