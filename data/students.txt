@@ -8,9 +8,9 @@ GPA: 10.00
 
 === Sinh vien 2 ===
 MSSV: 222
-Ho ten: nguyen dinh kha
-Tuoi: 22
-GPA: 9.00
+Ho ten: kha
+Tuoi: 23
+GPA: 7.00
 
 === Sinh vien 3 ===
 MSSV: 333

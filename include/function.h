@@ -7,6 +7,7 @@
 void displayMenu();
 void displayStudents();
 void addStudent();
+void editStudent();
 void saveToFile();
 void loadFromFile();
 #endif //FUNCTION_H

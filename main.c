@@ -16,6 +16,9 @@ int main() {
             case 2:
                 addStudent();
             break;
+            case 3:
+                editStudent();
+            break;
             case 0:
                 printf("\nCam on ban da su dung chuong trinh\n");
             break;

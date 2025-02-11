@@ -16,6 +16,7 @@ void displayMenu() {
     printf("====================================\n");
     printf("1. Hien thị danh sach sinh vien\n");
     printf("2. Them sinh vien moi\n");
+    printf("3. Sua thong tin sinh vien\n");
     printf("0. Thoat\n");
     printf("====================================\n");
     printf("Vui long chon chuc nang: ");
@@ -91,6 +92,71 @@ void addStudent() {
 
     fclose(file);
     printf("\nDa luu %d sinh vien vao file!\n", soLuong);
+}
+
+
+void editStudent() {
+    char searchId[20];
+    int found = 0;
+
+    printf("\n=== SUA THONG TIN SINH VIEN ===\n");
+    printf("Nhap MSSV can sua: ");
+    scanf("%s", searchId);
+    getchar();
+
+    // Tìm sinh viên theo ID
+    for (int i = 0; i < studentCount; i++) {
+        if (strcmp(students[i].id, searchId) == 0) {
+            // Hiển thị thông tin hiện tại
+            printf("\nThong tin hien tai:\n");
+            printf("MSSV: %s\n", students[i].id);
+            printf("Ho ten: %s\n", students[i].name);
+            printf("Tuoi: %d\n", students[i].age);
+            printf("GPA: %.2f\n", students[i].gpa);
+
+            // Nhập thông tin mới
+            printf("\nNhap thong tin moi:\n");
+            printf("Ho ten moi: ");
+            fgets(students[i].name, sizeof(students[i].name), stdin);
+            students[i].name[strcspn(students[i].name, "\n")] = 0;
+
+            printf("Tuoi moi: ");
+            scanf("%d", &students[i].age);
+
+            printf("GPA moi: ");
+            scanf("%f", &students[i].gpa);
+            getchar();
+
+            found = 1;
+
+            // Lưu vào file
+            FILE *file = fopen(FILENAME, "w");
+            if (file == NULL) {
+                printf("\nLoi: Khong the mo file de ghi!\n");
+                return;
+            }
+
+            // Ghi số lượng sinh viên
+            fprintf(file, "So luong sinh vien: %d\n\n", studentCount);
+
+            // Ghi lại toàn bộ danh sách
+            for (int j = 0; j < studentCount; j++) {
+                fprintf(file, "=== Sinh vien %d ===\n", j + 1);
+                fprintf(file, "MSSV: %s\n", students[j].id);
+                fprintf(file, "Ho ten: %s\n", students[j].name);
+                fprintf(file, "Tuoi: %d\n", students[j].age);
+                fprintf(file, "GPA: %.2f\n\n", students[j].gpa);
+            }
+
+            fclose(file);
+            printf("\nDa cap nhat thong tin sinh vien thanh cong!\n");
+            break;
+        }
+    }
+
+    if (!found) {
+        printf("\nKhong tim thay sinh vien co MSSV: %s\n", searchId);
+    }
 }
 
 void saveToFile() {
