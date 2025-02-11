@@ -1,6 +1,5 @@
 #include <stdio.h>
-// #include "../Project C students management/include/function.h"
-#include "include/function.h"
+#include "src/function.c"
 
 int main() {
     int choice;

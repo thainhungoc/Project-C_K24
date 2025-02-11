@@ -1,0 +1,20 @@
+So luong sinh vien: 3
+
+=== Sinh vien 1 ===
+MSSV: 111
+Ho ten: thai nhu ngoc
+Tuoi: 20
+GPA: 10.00
+
+=== Sinh vien 2 ===
+MSSV: 222
+Ho ten: nguyen dinh kha
+Tuoi: 22
+GPA: 9.00
+
+=== Sinh vien 3 ===
+MSSV: 333
+Ho ten: huynh tam anh
+Tuoi: 20
+GPA: 8.00
+
