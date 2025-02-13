@@ -1,0 +1,14 @@
+So luong sinh vien: 2
+
+=== Sinh vien 1 ===
+MSSV: aaaaaaaa
+Ho ten: thai nhu ngoc
+Tuoi: 20
+GPA: 10.00
+
+=== Sinh vien 2 ===
+MSSV: 11111111
+Ho ten: thu phuong
+Tuoi: 22
+GPA: 9.00
+
