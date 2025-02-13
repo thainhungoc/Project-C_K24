@@ -1,20 +1,14 @@
-So luong sinh vien: 3
+So luong sinh vien: 2
 
 === Sinh vien 1 ===
-MSSV: 111
+MSSV: aaaaaaaa
 Ho ten: thai nhu ngoc
 Tuoi: 20
 GPA: 10.00
 
 === Sinh vien 2 ===
-MSSV: 222
-Ho ten: kha
-Tuoi: 23
-GPA: 7.00
-
-=== Sinh vien 3 ===
-MSSV: 333
-Ho ten: huynh tam anh
-Tuoi: 20
-GPA: 8.00
+MSSV: 11111111
+Ho ten: thu phuong
+Tuoi: 22
+GPA: 9.00
 
